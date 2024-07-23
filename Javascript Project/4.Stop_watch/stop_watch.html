@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop watch</title>
+    <style>
+  body{
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .timeBtn{
+    width: 100px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 25px;
+  }
+  #timeDisplay{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #timeContainer{
+    width: 310px;
+    height: 100px;
+    padding: 40px;
+    background-color: brown;
+    border-radius: 20px;
+  }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="timeContainer">
+        <div id="timeDisplay">
+         00:00:00
+     </div>
+         <button id="StartBtn" class="timeBtn">Start</button>
+         <button id="PauseBtn" class="timeBtn">Stop</button>
+         <button id="resetBtn" class="timeBtn">Reset</button>
+    </div>
+
+    <script src="watch.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vowel WOrd</title>
+    <style>
+        body{
+            line-height: 1.5;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .wrapper{
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .wrapper h2{
+            font-size: 35px;
+            text-transform: uppercase;
+        }
+        textarea{
+            border: 4px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            outline: 0;
+            font-size:20px;
+            margin: auto 0 0;
+            resize: none;
+            margin-bottom: 20px;
+        }
+        .wrapper div{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        button{
+            height: 50px;
+            width: 150px;
+            border: 3px solid black;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-top: 20px;
+            background-color: rgb(9, 3, 15);
+            color: white;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Vowel Counter</h1>
+      <textarea rows="16" cols="40" placeholder="enter text..."></textarea>
+      <div>
+        Vowel count:
+        <span id="vowel-count"></span>
+      </div>
+      <button type="button" id="cheak-btn">Check Vowel</button>
+    </div>
+
+    <script src="vowel.js"></script>
+  </body>
+</html>

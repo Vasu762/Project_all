@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+
+    <style>
+        .word_counter-container {
+            padding: 16px;
+            font-family: "Roboto", sans-serif;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 42px;
+        }
+
+        textarea {
+            display: block;
+            width: 100%;
+            height: 200px;
+            border: 2px solid blue;
+            border-radius: 8px;
+            padding: 24px;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            resize: none;
+            max-width: 800px;
+            line-height: 1.5;
+            margin: 0 auto;
+            ;
+        }
+
+        .count-btn {
+            padding: 16px 48px;
+            margin: 32px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: navy;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            transition: all 500ms ease;
+        }
+
+        .count-btn:hover {
+            background-color: rgb(5, 5, 92);
+        }
+
+        .word-count {
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        span {
+            font-size: 57px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="word_counter-container">
+        <h2>Word Counter</h2>
+        <textarea name="" id="" cols="30" rows="10" class="words"></textarea>
+        <button class="count-btn">
+            Count Words
+        </button>
+        <div class="word-count">
+            No. of Word:
+            <span>0</span>
+        </div>
+    </div>
+
+
+
+    <script src="word.js"></script>
+</body>
+
+</html>

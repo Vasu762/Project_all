@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5</title>
+    <link rel="stylesheet" href="Task5.css">
+</head>
+<body>
+    <div id="sideMenu" class="sideMenu">
+        <a href="javascript:void(0)"
+            class="closeBtn"
+            onclick="closeNav()">×</a>
+        <div class="mainMenu">
+            <h2>SideMenu</h2>
+            <a href="javascript:void(0)"
+                onclick="showContent('Home')">Home</a>
+            <a href="javascript:void(0)"
+                onclick="showContent('About')">About</a>
+            <a href="javascript:void(0)"
+                onclick="showContent('Portfolio')">Portfolio</a>
+            <a href="javascript:void(0)"
+                onclick="showContent('Services')">Services</a>
+            <a href="javascript:void(0)"
+                onclick="showContent('Contact')">Contact</a>
+        </div>
+    </div>
+     
+    <div id="contentArea">
+        <span style="font-size: 30px; cursor: pointer"
+            onclick="openNav()">☰</span>
+        <div class="contentText">
+            <h2 id="contentTitle">
+                Toggle Sidebar Navigation</h2>
+            <h3>HTML CSS JS</h3>
+        </div>
+    </div>
+    <script src="Task5.js"></script>
+</body>
+</html>
